@@ -62,21 +62,32 @@ permissions:
 
 jobs:
   deploy:
-    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
+      
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-          cache: "pip" # caching pip dependencies
+          cache: "pip"
+      
+      - name: Install Dependencies 📦
+        run: |
+          gem install bundler
+          bundle config set --local path 'vendor/bundle'
+          bundle install --jobs=4 --retry=3
+          pip3 install --upgrade nbconvert
+      
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -84,15 +95,22 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-      - name: Install and Build 🔧
+      
+      - name: Clear cache 🧹
         run: |
-          pip3 install --upgrade nbconvert
-          export JEKYLL_ENV=production
-          bundle exec jekyll build
+          bundle exec jekyll clean
+      
+      - name: Build Site 🏗️
+        run: |
+          bundle exec jekyll build --trace
+        env:
+          JEKYLL_ENV: production
+          
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+          
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
