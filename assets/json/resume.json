@@ -1,200 +1,373 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
+    "name": "Inbasekaran Perumal",
+    "email": ["inba2002.p@gmail.com"],
+    "phone": "+91-8660467304",
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "inbasPeru",
+        "url": "https://linkedin.com/in/inbasPeru"
+      },
+      {
+        "network": "GitHub",
+        "username": "the-pinbo",
+        "url": "https://github.com/the-pinbo"
       }
     ]
   },
-  "work": [
-    {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "National Institute Of Technology, Surathkal",
+      "studyType": "Bachelor of Technology",
+      "area": "Electronics and Communication Engineering",
+      "startDate": "2020",
+      "endDate": "2024",
+      "score": "CGPA: 9.19/10 (Rank: 4/138)",
+      "courses": [
+        "University Rank 10 in Engineering in India according to National Institutional Ranking Framework 2022"
+      ]
+    },
+    {
+      "institution": "Narayana Co Sindhu Bhavan Bangalore, Karnataka",
+      "studyType": "Class XII CBSE (PCMC)",
+      "startDate": "2018",
+      "endDate": "2020",
+      "score": "Score: 96%"
     }
   ],
-  "awards": [
+  "work": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "Google Summer of Code",
+      "position": "Open Source Developer",
+      "highlights": [
+        "Developed a cross-platform Qt C++ GUI application for eye health monitoring, optimized for power and resource efficiency.",
+        "Created an eye gaze time estimation model using OpenCV C++ and five pre-trained models from the OpenVINO model zoo.",
+        "Utilized PC's webcam for offline edge inference, ensuring privacy and maintaining performance.",
+        "Optimized inference for Intel AI PC's NPU using the OpenVINO toolkit for efficient processing.",
+        "Achieved a frame rate of 28.2 FPS and latency of 20.1 ms on Apple M3 CPU for inference tasks.",
+        "[Certificate](https://drive.google.com/file/d/1yN5cmKnY8tLmjkushny7c1lAi6TUpoVD/view?usp=sharing)",
+        "[GitHub](https://github.com/inbasperu/VisionGuard)"
+      ],
+      "startDate": "2024-05",
+      "endDate": "Present",
+      "url": "https://summerofcode.withgoogle.com"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "name": "Indian Institute of Science, Bangalore",
+      "position": "Research Intern",
+      "highlights": [
+        "Tackled image deconvolution, lensless imaging reconstruction, and super-resolution microscopy using LASSO regression.",
+        "Implemented DiffuserCam for lensless imaging, achieving an average SSIM of 0.8324 and PSNR of 22.6821 with ADMM.",
+        "Developed and optimized iterative algorithms: Gradient Descent, FISTA, ADMM, TF-ISTA, RTF-ISTA, and deep unfolded counterparts: LISTA, TF-LISTA, ALISTA.",
+        "Improved reconstruction accuracy by 20.67% at a 30 dB noise level using unbiased methods.",
+        "Published detailed analyses and benchmarks, enhancing the explainability of deep-unfolded networks.",
+        "Mentors: [Mr. Kartheek Reddy](https://scholar.google.com/citations?user=3RvB_F8AAAAJ&hl=en), [Prof. Chandra Sekhar Seelamantula](https://ee.iisc.ac.in/chandra-sekhar-seelamantula/)",
+        "[Certificate](https://drive.google.com/file/d/12Ag3GhXoP3ZpqQUVVDsRCbBrmUqtfKvO/view?usp=sharing)"
+      ],
+      "startDate": "2024-01",
+      "endDate": "Present",
+      "url": "https://iisc.ac.in"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "name": "Goldman Sachs",
+      "position": "Summer Analyst Intern",
+      "highlights": [
+        "Automated the generation of business progress reports, focusing on Airflow workflows with granular event signals for detailed analysis.",
+        "Implemented an efficient PySpark data model on AWS Databricks, mapping business processes to flows and dependencies across 15 processes.",
+        "Developed comprehensive reports, including SLI and SLA misses, delivered to key stakeholders via email, saving team leads 30 minutes daily.",
+        "[Certificate](https://drive.google.com/file/d/1Bz6KhPO0xscS7Ci276hZlNHps4r7DEOV/view?usp=sharing)"
+      ],
+      "startDate": "2023-05",
+      "endDate": "2023-07",
+      "url": "https://www.goldmansachs.com/"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
+      "name": "Determinant Studios",
+      "position": "SDE Intern/Research Intern",
+      "highlights": [
+        "Developed custom NER engine for speech-based inventory management (Provisional patent in progress).",
+        "Proposed custom NER model with 17 classes, achieving high precision/recall (95.32/96.1).",
+        "Implemented Python backend logic served as FAST API endpoints and built an efficient Docker image.",
+        "Automated the process of keeping a ledger and tracking stocks in the inventory by voice, simplifying the job for shopkeepers.",
+        "[LinkedIn](https://www.linkedin.com/posts/activity-7013720158653337601-4N-i?utm_source=share&utm_medium=member_desktop)"
+      ],
+      "startDate": "2022-11",
+      "endDate": "2023-05",
+      "url": "https://www.determinantstudios.com/"
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "National Institute Of Technology, Surathkal",
+      "position": "Research Intern",
+      "highlights": [
+        "Used an Android smartphone that runs a TensorFlow lite CNN model to detect artificially ripened fruits.",
+        "The proposed system has an efficiency of 97.51% in the identification of the fruits ripened artificially with an F1 score of 0.9697.",
+        "Roughly 150 unripened raw bananas were obtained from a known farmer and half of it was ripened artificially using CaC2.",
+        "Mentor: [Dr. Shashidhar G Koolagudi](https://cse.nitk.ac.in/faculty/shashidhar-g-koolagudi)",
+        "[GitHub](https://github.com/the-pinbo/ripened-fruits-classifier)"
+      ],
+      "startDate": "2022-03",
+      "endDate": "2022-05",
+      "url": "https://www.nitk.ac.in"
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Programming Languages",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python",
+        "C++",
+        "Verilog",
+        "C",
+        "SQL"
       ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Frameworks/Libraries",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "OpenCV",
+        "OpenVINO",
+        "PyTorch",
+        "Qt",
+        "TensorFlow",
+        "PySpark",
+        "Airflow",
+        "NumPy",
+        "pandas",
+        "SciPy",
+        "spaCy"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Tools",
+      "keywords": [
+        "Vivado",
+        "Quartus Prime",
+        "QtSpim",
+        "Ripes",
+        "Gem5",
+        "Databricks",
+        "AWS",
+        "Docker",
+        "Snowflake"
+      ]
+    },
+    {
+      "name": "Skills",
+      "keywords": [
+        "Comp Arch",
+        "FPGA",
+        "Comp Vision",
+        "Image Processing",
+        "Linux Systems",
+        "Deep Learning/AI",
+        "NLP",
+        "VLSI CAD"
+      ]
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "PDM to Ethernet Frame Generator",
+      "highlights": [
+        "Designed an FPGA-based Ethernet PHY controller with an RMII interface to enable 100 Mbps data transmission.",
+        "Processed digital PDM audio signals from a MEMS microphone, applying decimation and resolution enhancement techniques.",
+        "Performed a 256-point FFT and developed an application to visualize real-time Fourier spectra and playback of recorded audio.",
+        "Integrated various hardware components, like FIFO and debounce switches, while addressing clock domain crossing challenges.",
+        "[GitHub](https://github.com/the-pinbo/PDM-to-Ethernet-Packet-Generator)"
+      ],
+      "startDate": "2023"
+    },
+    {
+      "name": "MIPS 5-Stage Pipeline Processor",
+      "highlights": [
+        "Designed and simulated a 5-stage pipelined MIPS processor on Cyclone V SoC FPGA, based on 'Computer Organization and Design' by Patterson and Hennessy.",
+        "Implemented pipeline registers, forwarding, stalls, hazard detection, MUL instruction, and static branch prediction. Validated with Modelsim and FPGA testing.",
+        "Extended MIPS instruction set with MUL, optimizing pipeline control and reducing branch misprediction penalties.",
+        "Tested with QtSpim programs for factorial and Fibonacci calculations, verifying branch prediction, MUL instruction, and hazard detection.",
+        "[GitHub](https://github.com/the-pinbo/MIPS-5-Stage-Pipeline-Project/tree/main)"
+      ],
+      "startDate": "2023"
+    },
+    {
+      "name": "MIPS Single-Cycle Processor",
+      "highlights": [
+        "Implemented a single-cycle MIPS processor in Verilog HDL, based on 'Computer Organization and Design' by Patterson and Hennessy.",
+        "Designed support for add, sub, lw, sw, beq, and slt instructions with 32-bit word memory. Validated with Modelsim simulations.",
+        "Programmed and tested the device using QtSpim to compute the sum of the first 16 values from data memory.",
+        "[GitHub](https://github.com/the-pinbo/MIPS-single-cycle/tree/main)"
+      ],
+      "startDate": "2022"
+    },
+    {
+      "name": "RISC Stored-Program Machine (RISC SPM)",
+      "highlights": [
+        "Designed and implemented an extended RISC Stored-Program Machine (SPM) using Verilog HDL, enhancing a basic architecture from 'Advanced Digital Design with the Verilog HDL' by Michael D. Ciletti.",
+        "Added an LDR instruction to improve memory handling, modifying the datapath and controller. Conducted extensive simulations and testing for accuracy.",
+        "[GitHub](https://github.com/the-pinbo/RISC-SPM/tree/main)"
+      ],
+      "startDate": "2022"
+    },
+    {
+      "name": "Noise2Noise",
+      "highlights": [
+        "Developed a neural network model to restore noisy images, trained on Gaussian noise, with zero mean and a nonzero variance, without using clean image priors.",
+        "Evaluated the performance of two models, REDNet and UNet, using mean PSNR and SSIM as metrics for inputs with a standard deviation of noise (σ) of 0.01, 0.02, and 0.03.",
+        "Observed that the ability of a network to denoise an image reduces as the noise value increases, with a higher rate of drop in SSIM in the case of UNet (drop from 0.645 to 0.374) compared to REDNet (drop from 0.577 to 0.435).",
+        "[GitHub](https://github.com/the-pinbo/image-denoising)"
+      ],
+      "startDate": "2023"
+    },
+    {
+      "name": "Anchor: The Docker Clone",
+      "highlights": [
+        "Reproduced a functional docker clone using Python3 which can mimic the working of the Docker commands of 'ps' and 'run'.",
+        "Achieved isolation in containers using Namespaces and Cgroups, and fast container build-up using Copy-on-Write filesystem.",
+        "[GitHub](https://github.com/rak108/Anchor-Docker_Clone)"
+      ],
+      "startDate": "2022"
+    },
+    {
+      "name": "Image Captioning using attention mechanism",
+      "highlights": [
+        "Takes an image as input and produces a short textual summary describing the content of the photo using an encoder-decoder architecture.",
+        "Inception v3 with image-net weights used for CNN (encoder) and several layers of GRUs along with an attention mechanism (decoder).",
+        "Achieved a BLEU score of 34 on the predicted captions.",
+        "[GitHub](https://github.com/IEEE-NITK/Image_Captioning/tree/main)"
+      ],
+      "startDate": "2022"
+    },
+    {
+      "name": "Reduced Ordered Binary Decision Diagram",
+      "highlights": [
+        "Developed a canonical data structure for the efficient representation of Boolean functions, focusing on scalability.",
+        "Capable of handling up to 20 variables, offering dynamic and colorful visualizations using Graphviz-dot.",
+        "Emphasized modularity and maintainability by utilizing advanced object-oriented programming principles.",
+        "Enabled the reduction of equivalent Boolean functions to a single representation, incorporating variable ordering flexibility.",
+        "[GitHub](https://github.com/the-pinbo/ROBDD)"
+      ],
+      "startDate": "2022"
+    },
+    {
+      "name": "Boolean Calculator Engine",
+      "highlights": [
+        "Developed a tool for performing Boolean operations on two functions.",
+        "Optimized computational efficiency by storing functions in Positional Cube Notation (PCN) form.",
+        "Enhanced operational efficiency and functionality using the Unate Recursive Paradigm (URP).",
+        "Capable of processing functions with up to 20 input variables, and covers complex operations like 'smoothing' and 'consensus'.",
+        "[GitHub](https://github.com/the-pinbo/BooleanCalculator)"
+      ],
+      "startDate": "2022"
+    },
+    {
+      "name": "IC Layout Optimization",
+      "highlights": [
+        "Developed a program that recursively partitions a set of blocks using the heuristic Fiduccia-Mattheyses algorithm.",
+        "Implemented visualization of the partitioned circuit layout using Graphviz for clear and detailed graphical representations.",
+        "Instituted comprehensive logging of each algorithmic step, facilitating an in-depth understanding of the partitioning process.",
+        "[GitHub](https://github.com/the-pinbo/EC704-VLSI-Design-Automation/blob/main/Assignment-2/fm-algo.ipynb)"
+      ],
+      "startDate": "2022"
+    },
+    {
+      "name": "ASIC Design of Sequential Binary Multipliers",
+      "highlights": [
+        "Implemented ASIC design for 4-bit Binary Multipliers and conducted a comprehensive comparison.",
+        "Developed two multipliers: Shift-and-Add Multiplier using SCMOS technology and Booth's Multiplier using SkyWater technology.",
+        "Created an RTL design incorporating data path and controller components and verified the physical design using irsim.",
+        "[GitHub](https://drive.google.com/file/d/1ek0VRcVvO170CAdiuMebe582-J6lAOHX/view)"
+      ],
+      "startDate": "2022"
+    },
+    {
+      "name": "NITK Winter of Code Plagiarism Check Software",
+      "highlights": [
+        "Developed a plagiarism checker specifically designed for academic research papers.",
+        "Employed a combination of TF-IDF, cosine similarity, doc2vec, and fuzzy matching techniques, along with a web crawler.",
+        "Established a MySQL database and crafted a REST API using the Flask framework.",
+        "Conducted thorough testing of the system with papers from the IEEE Access journal to ensure reliability and effectiveness.",
+        "[GitHub](https://github.com/the-pinbo/Plagiarism-Check/tree/flask_api)"
+      ],
+      "startDate": "2022"
+    }
+  ],
+  "courses": [
+    "High Performance Comp Arch",
+    "Digital Design with FPGA",
+    "Data Structures and Algorithmic Analysis",
+    "Optimization",
+    "Compressive Sensing",
+    "Sparse Signal Processing",
+    "VLSI CAD",
+    "Deep Learning",
+    "Operating System",
+    "[Certifications Folder](https://drive.google.com/drive/folders/1ASzNgBquVsRkPHWnBeuqzr9AawMiEENM?usp=sharing)"
+  ],
+  "awards": [
+    "Achieved a percentile of 99.31 in the Joint Entrance Examination(JEE) from a pool of more than 1.1 million candidates.",
+    "Bagged the certificate of appreciation for securing the highest marks in Social Studies (100%) in 2018.",
+    "Secured a Gold Medal in SOF International English Olympiad - Zonal 2017.",
+    "Secured a Silver Medal in SOF NATIONAL CYBER OLYMPIAD - Zonal 2016."
+  ],
+  "volunteer": [
+    {
+      "organization": "IEEE-NITK Student Branch",
+      "position": "Chair of Computational Intelligence Society",
+      "highlights": [
+        "Organized Intell Quest, a 4-day NLP hackathon with 100+ participants.",
+        "Spearheaded the AI-Vision-Cup, a computer vision competition with three distinct tracks, engaging over 250 participants.",
+        "Orchestrated a series of talks and hands-on sessions on machine learning topics.",
+        "Initiated and organized the Kaggle Cup, a nationwide hackathon for beginners, attracting over 150 participants.",
+        "[Folder](https://drive.google.com/drive/folders/1FgTqNl34U3OFpzElQ0rRkaHE2iargTIX?usp=sharing)"
+      ],
+      "startDate": "2023-04",
+      "endDate": "2024-04"
+    },
+    {
+      "organization": "IEEE Computer Society",
+      "position": "Executive Member",
+      "highlights": [
+        "Active member of both the IEEE Computational Intelligence Society and the IEEE Computer Society. [Instagram](https://www.instagram.com/p/C0rR0xkP9Wb/?utm_source=ig_web_copy_link)",
+        "Volunteered at ICDDSS 2023 and ICRIE 2022, prestigious conferences hosted at NITK. [LinkedIn](https://www.linkedin.com/posts/prasantmisra_in-the-words-of-elizabeth-andrew-volunteers-activity-7138902112549171200-NFSe?utm_source=share&utm_medium=member_desktop)",
+        "Conducted personalized one-on-one interview sessions to prepare junior members for their career advancement.",
+        "Guided four executive members in developing a CLI torrent client application named 'MIM' using Rust. [GitHub](https://github.com/the-pinbo/mim)",
+        "Mentored seven student members in creating a Tic Tac Toe bot, utilizing the minimax algorithm and a graphical interface. [GitHub](https://github.com/MistaAsh/Envision-TicTacToe-Bot)",
+        "Conducted an informative session on Python Modules as part of the Envision Knowledge Sharing Sessions (KSS).",
+        "Hosted a beginner-level workshop on C++ under the Eureka educational initiative."
+      ],
+      "startDate": "2021-10",
+      "endDate": "Present"
+    },
+    {
+      "organization": "Web Club",
+      "position": "Executive Member of Intelligence group",
+      "highlights": [
+        "Volunteered in organizing the API Day Coastal Karnataka by COSH NITK, a conference presented by Postman. [LinkedIn](https://www.linkedin.com/posts/mittal-parth_api-postman-conference-activity-7135129303247196161-aq8w?utm_source=share&utm_medium=member_desktop)",
+        "Conducted a session on 'Deep Learning and Beyond' for 30 attendees at NITK. [Document](https://docs.google.com/document/d/1aIF15L3fnemFLM8kucAbP78K2bCROIlcn9binSFVLhs/edit?usp=sharing)",
+        "Organized a 24-hour hackathon for first and second-year undergraduate students as a part of Silicon Maze 2022."
+      ],
+      "startDate": "2021-11",
+      "endDate": "2024-04"
+    },
+    {
+      "organization": "IEEE-NITK Student Branch",
+      "position": "Outreach and Media Team Lead",
+      "highlights": [
+        "Designed and supervised 150+ graphic art for various events throughout the year.",
+        "Led a team in maintaining a social media presence and executed strategic messaging campaigns to maximize reach.",
+        "[Instagram](https://www.instagram.com/ieee_nitk/?hl=en)"
+      ],
+      "startDate": "2022-04",
+      "endDate": "2023-04"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Hobbies",
+      "keywords": [
+        "Enthusiastic amateur photographer and content creator, proficient in Canva and Adobe Creative Cloud (Part-time [YouTuber](https://www.youtube.com/channel/UCRetyVD94WHmt5cRjFx_K4w))",
+        "Passionate about Linux systems and hardware-software interfaces."
+      ]
     }
   ]
 }
