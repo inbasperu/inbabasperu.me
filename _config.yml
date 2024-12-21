@@ -49,8 +49,8 @@ rss_icon: false
 
 navbar_fixed: true
 footer_fixed: false
-search_enabled: true
-socials_in_search: true
+search_enabled: false
+socials_in_search: false
 
 # Dimensions
 max_width: 930px
@@ -145,10 +145,10 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false
     permalink: /:collection/:title/
   projects:
-    output: true
+    output: false
     permalink: /:collection/:title/
 
 announcements:
@@ -157,7 +157,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
@@ -197,6 +197,11 @@ exclude:
   - package-lock.json
   - _pages/about_inba.md
   - _pages/profiles.md
+  - _pages/blog.md
+  - _pages/projects.md
+  - _pages/background.md
+  - _pages/repositories.md
+  - _pages/dropdown.md
   # - _pages/publications.md
   - _pages/teaching.md
   - purgecss.config.js
