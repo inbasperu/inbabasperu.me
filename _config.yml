@@ -197,7 +197,7 @@ exclude:
   - package-lock.json
   - _pages/about_inba.md
   - _pages/profiles.md
-  - _pages/publications.md
+  # - _pages/publications.md
   - _pages/teaching.md
   - purgecss.config.js
   - README.md

@@ -25,7 +25,7 @@ profile:
 #    <p style="text-align: center;">Building a neural network from scratch? Just `import torch as np`—problem solved! 🤖📚</p>
 
 news: true
-selected_papers: false
+selected_papers: true
 social: true
 ---
 
@@ -41,4 +41,4 @@ I hold a B.Tech in Electronics and Communication Engineering (2024) from [NIT Ka
 - **Research @ IISc**: Worked with [Prof. Chandra Sekhar Seelamantula](https://ee.iisc.ac.in/chandra-sekhar-seelamantula/) on inverse imaging problems: lens-less imaging and single-molecule localization microscopy.  
 - **Internships**: Contributed at [Goldman Sachs](https://www.goldmansachs.com) and [Determinant Studios](https://www.determinantstudios.com).
 
-I love exploring the intersection of ML algorithms and hardware optimization to create efficient, scalable AI systems. Always learning, always building 🚀!
+I love exploring the intersection of ML algorithms and hardware optimization to create efficient, scalable AI systems. Always learning, always building! 🚀
