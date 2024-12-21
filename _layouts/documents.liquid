@@ -1,0 +1,330 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    <!-- Resume Section -->
+    {% if page.cv_pdf %}
+    <div class="card mb-5">
+      <div class="card-body">
+        <h2 class="card-title">Résumé</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <a 
+              href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-document"
+            >
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>View Résumé</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdf-preview">
+          <embed
+            src="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}#toolbar=0"
+            type="application/pdf"
+            width="100%"
+            height="500px"
+          />
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- Transcript Section -->
+    {% if page.transcript_pdf %}
+    <div class="card mb-5">
+      <div class="card-body">
+        <h2 class="card-title">Academic Transcript</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <a 
+              href="{{ page.transcript_pdf | prepend: 'assets/pdf/' | relative_url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-document"
+            >
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>View Transcript</span>
+            </a>
+          </div>
+        </div>
+        <div class="pdf-preview">
+          <embed
+            src="{{ page.transcript_pdf | prepend: 'assets/pdf/' | relative_url }}#toolbar=0"
+            type="application/pdf"
+            width="100%"
+            height="500px"
+          />
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- Certifications Section -->
+    {% if page.certifications %}
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title mb-4">Professional Certifications</h2>
+        <div class="row g-5">
+          {% for cert in page.certifications %}
+            <div class="col-lg-6">
+              <div class="certificate-card">
+                <h3 class="certificate-title">{{ cert.title }}</h3>
+                
+                <div class="certificate-preview-container">
+                  {% assign file_extension = cert.pdf | split: '.' | last %}
+                  {% if file_extension == 'pdf' %}
+                    <embed
+                      src="{{ cert.pdf | prepend: 'assets/certificates/' | relative_url }}#toolbar=0"
+                      type="application/pdf"
+                      class="certificate-preview-pdf"
+                    />
+                  {% else %}
+                    <img 
+                      src="{{ cert.pdf | prepend: 'assets/certificates/' | relative_url }}"
+                      alt="{{ cert.title }} preview"
+                      class="certificate-preview-img"
+                    />
+                  {% endif %}
+                </div>
+
+                <div class="certificate-details">
+                  <p class="issuer">{{ cert.issuer }}</p>
+                  <p class="date">{{ cert.date }}</p>
+                  
+                  {% if cert.credential %}
+                    <p class="credential">Credential ID: {{ cert.credential }}</p>
+                  {% endif %}
+                  
+                  {% if cert.skills %}
+                    <p class="skills">
+                      <span class="skills-label">Skills:</span> {{ cert.skills }}
+                    </p>
+                  {% endif %}
+
+                  {% if cert.pdf %}
+                    <a 
+                      href="{{ cert.pdf | prepend: 'assets/certificates/' | relative_url }}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn-document"
+                    >
+                      <i class="fa-solid fa-certificate"></i>
+                      <span>View Certificate</span>
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </article>
+</div>
+
+<style>
+  .pdf-preview {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 1rem;
+    background-color: var(--global-bg-color);
+  }
+
+  .certificate-card {
+    background-color: var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    padding: 2rem;
+    height: 100%;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 520px;
+  }
+
+  .certificate-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--global-theme-color);
+  }
+
+  .certificate-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--global-text-color);
+    line-height: 1.4;
+    height: 2.8em;  /* Fixed height for title */
+    display: flex;
+    align-items: flex-start;
+    text-transform: capitalize;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .certificate-preview-container {
+    width: 100%;
+    aspect-ratio: 16/9;  /* Fixed aspect ratio for all previews */
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white; /* Keep preview background white */
+    min-height: 200px;
+  }
+
+  .certificate-preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Changed to contain to prevent stretching */
+    background-color: white;
+    padding: 1rem;
+  }
+
+  .certificate-preview-pdf {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: white;
+  }
+
+  .certificate-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 200px;  /* Minimum height for details section */
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+
+  .issuer {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--global-text-color);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    text-transform: capitalize;
+  }
+
+  .date {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  .credential {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.5rem;
+    font-family: var(--global-monospace);
+  }
+
+  .skills {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    text-transform: capitalize;
+  }
+
+  .skills-label {
+    font-weight: 500;
+    color: var(--global-text-color);
+  }
+
+  .btn-document {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--global-code-bg-color);
+    border: 1px solid var(--global-theme-color);
+    border-radius: 8px;
+    color: var(--global-text-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .btn-document i {
+    margin-right: 0.75rem;
+    color: var(--global-theme-color);
+  }
+
+  .btn-document:hover {
+    background-color: var(--global-theme-color);
+    color: white;
+    text-decoration: none;
+  }
+  
+  .btn-document:hover i {
+    color: white;
+  }
+
+  .card {
+    background-color: var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+  }
+
+  .card-title {
+    color: var(--global-text-color);
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+  }
+
+  .g-5 {
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+  }
+
+  /* Improved row alignment */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+  }
+  
+  .col-lg-6 {
+    display: flex;
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-left: calc(var(--bs-gutter-x) / 2);
+    margin-bottom: var(--bs-gutter-y);
+  }
+
+  /* Ensure consistent spacing */
+  .card-body {
+    padding: 2rem;
+  }
+
+  /* Dark mode specific adjustments */
+  @media (prefers-color-scheme: dark) {
+    .certificate-preview-container {
+      border-color: var(--global-divider-color);
+    }
+    
+    .certificate-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+</style>
