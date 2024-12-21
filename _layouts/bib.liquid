@@ -198,9 +198,11 @@
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
+      {% comment %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
+      {% endcomment %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
           <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
@@ -350,6 +352,7 @@
       </div>
     {% endif %}
 
+    {% comment %}
     {% if entry.bibtex_show %}
       <!-- Hidden bibtex block -->
       <div class="bibtex hidden">
@@ -358,6 +361,7 @@
         {% endhighlight %}
       </div>
     {% endif %}
+    {% endcomment %}
 
     {% if entry.video and site.enable_video_embedding %}
       <!-- Hidden video block -->

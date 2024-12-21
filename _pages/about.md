@@ -1,40 +1,44 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: GSoC-24 @Intel OpenVINO toolkit || Research Intern @IISc || Ex-Intern @Goldman Sach || ECE @NITK
-
+subtitle: |
+  <p style="text-align: center;">
+    SDE @RingCentral || GSoC '24 @Intel OpenVINO Toolkit || Ex-Research Intern @IISc || Ex-Intern @Goldman Sachs || ECE @NITK
+  </p>
+  <p style="text-align: center;">
+    <b>Passionate about AI/ML, low-level systems, and integrating mathematics into real-world tech.</b>
+  </p>
+  
 
 profile:
   align: right
   image: inba_dp.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Shahakara Nagar</p>
-    <p>Bangalore-560092, Karnataka</p>
-    <p>India</p>
+  image_circular: true
+  more_info: |
+    <p style="text-align: center;">
+      Tried switching to TensorFlow:<br>
+      <code>import torch as tf</code><br>
+      Turns out <code>tf.coffee.is_available()</code><br>problem solved! ☕🔥
+    </p>
+#    import coffee as fuel ☕️💡
+#    <p style="text-align: center;">Building a neural network from scratch? Just `import torch as np`—problem solved! 🤖📚</p>
 
-news: false # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: fasle # includes social icons at the bottom of the page
+news: true
+selected_papers: true
+social: true
 ---
 
-## About Me
+## Hi there! 👋
 
-👋 Hello everyone!
+I'm a Software Development Engineer at [RingCentral](https://www.ringcentral.com/), where I build scalable platforms for AI-driven conversational insights as part of the RingSense-AI team.  
 
-I'm an enthusiastic techie who just completed my undergraduate degree in Electronics & Communication Engineering from the [National Institute of Technology Karnataka (NITK)](https://www.nitk.ac.in). I live in Bangalore, India, and I am deeply passionate about the hardware-software interface, integrating AI/ML and signal processing to uncover the inner workings of computers and electronics.
+I hold a B.Tech in Electronics and Communication Engineering (2024) from [NIT Karnataka](https://www.nitk.ac.in/), where I cultivated a strong passion for AI, systems, and mathematics.  
 
-💻 Currently, I’m an open-source developer with [Intel OpenVINO Toolkit](https://github.com/openvinotoolkit) as part of [GSoC 2024](https://summerofcode.withgoogle.com/programs/2024/organizations/openvino-toolkit), working on ["VisionGuard"](https://github.com/inbasperu/VisionGuard), a desktop application optimized to run on Intel AI PCs’ NPUs to track screen usage using AI models. The inference is done on the edge, optimized with OpenVINO for efficient power usage and latency. I'll be coding this in my favorite language, C++, with a sleek GUI interface.
+### Highlights
 
-🔍 My current focus is on inverse imaging problems, particularly solving the "LASSO Regression" task. I'm doing a research internship at the [Indian Institute of Science, Bangalore](https://iisc.ac.in), under the mentorship of [Mr. Kartheek Reddy](https://scholar.google.com/citations?user=3RvB_F8AAAAJ&hl=en) and [Prof. Chandra Sekhar Seelamantula](https://ee.iisc.ac.in/chandra-sekhar-seelamantula/), exploring deep learning and iterative optimization approaches.
+- **GSoC '24 @ Intel OpenVINO Toolkit**: Developed [VisionGuard](https://github.com/inbasperu/VisionGuard), a gaze-tracking app promoting healthier screen habits, optimized for Intel Neural Processing Units.  
+- **Research @ IISc**: Worked with [Prof. Chandra Sekhar Seelamantula](https://ee.iisc.ac.in/chandra-sekhar-seelamantula/) on inverse imaging problems: lens-less imaging and single-molecule localization microscopy.  
+- **Internships**: Contributed at [Goldman Sachs](https://www.goldmansachs.com) and [Determinant Studios](https://www.determinantstudios.com).
 
-🚀 I love diving into the hardware-software interface and understanding computers. My projects include implementing a basic NIC on an FPGA and a pipelined RISC-V processor. I've taken advanced honors PG courses to deepen my knowledge of computer engineering and advanced signal processing courses to enhance my understanding of the mathematical foundations of machine learning.
-
-🌟 During a summer internship at [Goldman Sachs](https://www.goldmansachs.com/), I expanded my technical expertise by using Big Data tools such as Spark and AirFlow for ML workflows. My venture into NLP involved developing a named entity recognition and part-of-speech tagging engine for an inventory management application at [Determinant Studios](https://www.determinantstudios.com/), enhancing my understanding of open-source LLMs and other NLP concepts.
-
-📄 As an IEEE member from the start of my college journey, I have actively participated in the Computer Society and the Computational Intelligence Society (CIS). I mentored projects, conducted sessions, participated in hackathons, and served as Chairman of the [IEEE Computational Intelligence Society NITK Student Chapter](https://drive.google.com/drive/folders/1FgTqNl34U3OFpzElQ0rRkaHE2iargTIX?usp=sharing). My first encounter with ML was through an IEEE project focusing on image captioning with an attention mechanism.
-
-🎨 Outside of academics, I love tinkering with computers, experimenting with various Linux distributions, photography, graphic designing, and filmmaking. I also contributed as the [Media and Outreach lead of IEEE-NITK Student Branch](https://www.instagram.com/ieee_nitk/?hl=en) during my second year, exploring my graphic designing interests. As a child, I dreamt of becoming a YouTuber and making short films. Feel free to check out my [YouTube channel](https://www.youtube.com/channel/UCRetyVD94WHmt5cRjFx_K4w), but be warned, it's cringey to the fullest extent.
-
-🌍 As an open-source tech enthusiast, I am driven by the potential of mathematics and its application in technology. Beyond technical mastery, my ambition is to leverage technology to create solutions that benefit humanity, merging technological innovation with social impact. I'm passionate about continuous learning, always eager to explore new technologies, expand my skill set, and broaden my network. My goal is to make a positive difference in society and be recognized by my peers and colleagues for my contributions to the ever-evolving world of technology.
+I love exploring the intersection of ML algorithms and hardware optimization to create efficient, scalable AI systems. Always learning, always building! 🚀

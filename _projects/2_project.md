@@ -1,81 +1,41 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: MIPS 5-Stage Pipeline Processor
+description: Advanced pipelined processor implementation on Cyclone V SoC FPGA
+img: assets/img/mips_pipeline.jpg
 importance: 2
-category: work
-giscus_comments: true
+category: hardware
+github: https://github.com/the-pinbo/MIPS-5-Stage-Pipeline-Project
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+A comprehensive implementation of a pipelined MIPS processor, following the architecture described in Patterson and Hennessy's "Computer Organization and Design". This project demonstrates advanced concepts in computer architecture and hardware design.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### Key Features
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+- Complete 5-stage pipeline implementation
+- Advanced hazard detection and forwarding
+- Static branch prediction
+- Custom MUL instruction implementation
+- Comprehensive pipeline control system
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+### Technical Implementation
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The processor includes:
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- **Pipeline Stages**: IF, ID, EX, MEM, WB with full hazard handling
+- **Performance Features**:
+  - Data forwarding for reduced stalls
+  - Branch prediction for improved throughput
+  - Optimized MUL instruction integration
+- **Verification**: Extensive testing using Modelsim and real FPGA deployment
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Validation
 
-{% raw %}
+- Successfully tested with complex programs including:
+  - Factorial calculation
+  - Fibonacci sequence generation
+- Demonstrated correct handling of data hazards
+- Verified branch prediction effectiveness
+- Confirmed MUL instruction functionality
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+This project represents a sophisticated implementation of modern processor design principles, combining theoretical computer architecture concepts with practical hardware realization.
